@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Rule</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+    <h1>Create Rule</h1>
+    <form action="#" th:action="@{/api/rules}" method="post">
+        <label for="ruleString">Rule String:</label><br>
+        <input type="text" id="ruleString" name="ruleString" required><br><br>
+        <input type="submit" value="Create Rule">
+    </form>
+    <br>
+    <a href="/">Back to Home</a>
+</body>
+</html>

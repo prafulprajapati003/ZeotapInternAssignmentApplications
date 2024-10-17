@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Evaluate Rule</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+    <h1>Evaluate Rule</h1>
+    <form action="#" th:action="@{/api/rules/evaluate}" method="post">
+        <label for="ruleString">Rule String:</label><br>
+        <input type="text" id="ruleString" name="ruleString" required><br><br>
+        
+        <h3>Attributes:</h3>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br>
+
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" required><br>
+
+        <label for="salary">Salary:</label>
+        <input type="number" id="salary" name="salary" required><br>
+
+        <label for="experience">Experience:</label>
+        <input type="number" id="experience" name="experience" required><br><br>
+
+        <input type="submit" value="Evaluate Rule">
+    </form>
+    <br>
+    <a href="/">Back to Home</a>
+</body>
+</html>
