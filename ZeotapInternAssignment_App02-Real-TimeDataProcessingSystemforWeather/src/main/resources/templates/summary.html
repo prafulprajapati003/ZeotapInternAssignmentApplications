@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Summary for [[${city}]]</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Weather Summary for [[${city}]]</h1>
+    
+    <div class="summary">
+        <p><strong>Average Temperature:</strong> [[${weatherSummary.averageTemp}]] °C</p>
+        <p><strong>Maximum Temperature:</strong> [[${weatherSummary.maxTemp}]] °C</p>
+        <p><strong>Minimum Temperature:</strong> [[${weatherSummary.minTemp}]] °C</p>
+        <p><strong>Dominant Weather Condition:</strong> [[${weatherSummary.dominantWeatherCondition}]]</p>
+    </div>
+
+    <a href="/">Back to Home</a>
+</body>
+</html>
