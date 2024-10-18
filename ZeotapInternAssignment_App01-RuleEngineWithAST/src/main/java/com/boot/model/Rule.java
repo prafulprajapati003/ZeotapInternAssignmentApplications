@@ -18,7 +18,6 @@ public class Rule {
     @Column(length = 30)
     private String ruleString;
 
-    // Constructors, getters, and setters
     public Rule() {}
 
     public Rule(String ruleString) {
