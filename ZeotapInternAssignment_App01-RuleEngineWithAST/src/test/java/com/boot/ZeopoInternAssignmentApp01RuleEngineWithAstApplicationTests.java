@@ -11,14 +11,14 @@ import org.mockito.MockitoAnnotations;
 
 import com.boot.model.Rule;
 import com.boot.repository.RuleRepository;
-import com.boot.service.IRuleService;
+import com.boot.service.RulesServiceImpl;
 
 public class ZeopoInternAssignmentApp01RuleEngineWithAstApplicationTests {
     @Mock
     private RuleRepository ruleRepository;
 
     @InjectMocks
-    private IRuleService ruleService;
+    private RulesServiceImpl ruleService;
 
     @BeforeEach
     public void setUp() {
