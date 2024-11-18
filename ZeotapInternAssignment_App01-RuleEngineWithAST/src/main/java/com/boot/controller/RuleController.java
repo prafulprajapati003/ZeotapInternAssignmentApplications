@@ -4,19 +4,19 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.boot.model.Node;
 import com.boot.model.Rule;
 import com.boot.service.IRuleService;
 import com.boot.service.RuleEvaluatorService;
 
-@Controller
+@RestController
 @RequestMapping("/rules")
 public class RuleController {
 	@Autowired
